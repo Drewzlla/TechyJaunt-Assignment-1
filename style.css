@@ -144,6 +144,12 @@ nav ul li:last-child a{
   text-align: center;
   cursor: pointer;
 }
+.hero .content{
+  width: 70%;
+}
+.hero p{
+  width: 70%;
+}
 img{
   max-width: 100%;
 }
@@ -163,6 +169,9 @@ img{
   background-color: var(--other-color);
   color: white;
   padding: 40px 0;
+}
+.testimonial .heading-2{
+  width: 70%;
 }
 .testimonial .card-grid{
   display: grid;
@@ -322,11 +331,79 @@ footer{
   
     .menu-toggle {
       display: block;
-      font-size: 1.2rem;
+      font-size: 1.9rem;
     }
-  }
+
   nav .container{
       display: flex;
     justify-content: space-between;
     align-items: center;
   }
+  .hero .content,
+  .hero p{
+    width: 100%;
+    text-align: center;
+  }
+  .hero .hero-btn .btn, .btn-1{
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .video-preview .video-container .hero-btn .btn-1{
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .testimonial .heading-2{
+    width: 100%;
+    text-align: center;
+  }
+  .testimonial .card-grid,
+  .pricing .pricing-grid{
+    grid-template-columns: 1fr;
+  }
+    /* text formats */
+  .heading-1{
+    font-size: 1.9rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40px 0 20px;
+  }
+  .heading-2 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 40px 0 20px;
+  }
+  
+  .heading-3 {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 30px 0 20px;
+  }
+  @media (max-width: 500px) {
+    .heading-1 {
+      font-size: 2rem;
+    }
+
+    .faq li {
+        font-size: 11px;
+    }
+
+    .faq-header h4 {
+        font-size: 11px;
+    }
+    .faq-body p {
+        font-size: 11px;
+    }
+
+    .footer-text {
+        font-size: 11px;
+    }
+
+    .footer-content img {
+        width: 150px;
+      }
+  }
+   }
