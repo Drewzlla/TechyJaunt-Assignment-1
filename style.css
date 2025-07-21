@@ -407,3 +407,13 @@ footer{
       }
   }
    }
+   @media (min-width: 671px) {
+  .hero img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    margin-top: 20px;
+    display: block;
+  }
+}
